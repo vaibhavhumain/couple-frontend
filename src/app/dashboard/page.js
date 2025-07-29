@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import api from '/utils/api';
 import Navbar from '../components/Navbar';
-
+import Link from 'next/link';
 export default function DashboardPage() {
   const router = useRouter();
   const [user, setUser] = useState(null);
@@ -25,7 +25,7 @@ export default function DashboardPage() {
           },
         });
 
-        setUser(res.data); // Your backend returns the full user, not { user: ... }
+        setUser(res.data); 
       } catch (err) {
         console.error('Not logged in', err.response?.data || err.message);
         router.push('/login');
@@ -43,10 +43,12 @@ export default function DashboardPage() {
       </h1>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <Link href="/write-feeling">
         <div className="bg-white rounded-xl shadow p-6 text-center hover:shadow-lg transition">
           <h2 className="text-xl font-semibold text-gray-800 mb-2">✍️ Write Today's Feeling</h2>
           <p className="text-gray-600">Share how you felt about each other today.</p>
         </div>
+        </Link>
 
         <div className="bg-white rounded-xl shadow p-6 text-center hover:shadow-lg transition">
           <h2 className="text-xl font-semibold text-gray-800 mb-2">📸 Upload a Memory</h2>

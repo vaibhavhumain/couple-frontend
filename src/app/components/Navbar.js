@@ -23,7 +23,7 @@ export default function Navbar() {
     router.push('/login');
   };
 
-  if (!isClient) return null; // ✅ prevent SSR mismatch flash
+  if (!isClient) return null; 
 
   return (
     <nav className="bg-pink-200 text-pink-900 px-8 py-4 shadow-md flex justify-between items-center">
@@ -37,7 +37,7 @@ export default function Navbar() {
       <div className="flex items-center gap-5">
         {user ? (
           <>
-            <span className="font-medium text-sm">Hi, {user.name?.split(' ')[0]}</span>
+            <span className="font-medium text-sm"><h2>Hi, {user.name?.split(' ')[0]}</h2></span>
             <button
               onClick={handleLogout}
               className="bg-pink-500 hover:bg-pink-600 text-white px-4 py-1.5 text-sm rounded-lg transition"

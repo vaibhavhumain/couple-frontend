@@ -4,7 +4,6 @@ import api from '../api';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-// Mood options with extra metadata
 const moods = [
   { label: 'Happy 😊', value: 'Happy', message: 'Happiness is contagious — spread the joy!', emoji: '😊' },
   { label: 'Sad 😢', value: 'Sad', message: 'It’s okay to feel sad. Take your time. 🌧️', emoji: '😢' },

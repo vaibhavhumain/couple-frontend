@@ -8,7 +8,7 @@ export default function Home() {
         Welcome to Our Couple Space 💖
       </h1>
       <p className="mb-10 text-gray-700 text-lg max-w-xl">
-        A place to share love, memories, and moments — every single day. Whether you're near or far, this is your shared world.
+        Chapter of RUHAV 🌷
       </p>
 
       <div className="flex gap-4">

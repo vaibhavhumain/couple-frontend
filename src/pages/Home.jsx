@@ -8,7 +8,7 @@ export default function Home() {
         Welcome to Our Couple Space 💖
       </h1>
       <p className="mb-10 text-gray-700 text-lg max-w-xl">
-        Chapter of RUHAV 🌷
+        Chapter of RUBHAV 🌷
       </p>
 
       <div className="flex gap-4">

@@ -50,10 +50,12 @@ export default function Dashboard() {
             </div>
           </Link>
 
+          <Link to="/UploadMemory">
           <div className="bg-white rounded-xl shadow p-6 text-center hover:shadow-lg transition">
             <h2 className="text-xl font-semibold text-gray-800 mb-2">📸 Upload a Memory</h2>
             <p className="text-gray-600">Upload your beautiful moment together.</p>
           </div>
+          </Link>
 
           <div className="bg-white rounded-xl shadow p-6 text-center hover:shadow-lg transition">
             <h2 className="text-xl font-semibold text-gray-800 mb-2">❤️ 365 Reasons I Love You</h2>
